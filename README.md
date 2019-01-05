@@ -1,6 +1,6 @@
 #meta-backend
 
-This repository represents backend-library of the project, also known as ComputeUnit-Wrapper.
+This repository represents the backend-library of the project, also known as ComputeUnit-Wrapper.
 It is used by the service plattform to deploy self-sustained ComputeUnits.
 
 It uses CMake.
