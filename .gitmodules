@@ -1,0 +1,6 @@
+[submodule "libs/amqpcpp"]
+	path = libs/amqpcpp
+	url = https://github.com/moddx/amqpcpp
+[submodule "core"]
+	path = core
+	url = https://bitbucket.org/mervens/meta-core
