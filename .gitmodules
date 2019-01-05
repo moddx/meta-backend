@@ -3,4 +3,4 @@
 	url = https://github.com/moddx/amqpcpp
 [submodule "core"]
 	path = core
-	url = https://bitbucket.org/mervens/meta-core
+	url = https://github.com/moddx/meta-core
