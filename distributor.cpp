@@ -39,10 +39,9 @@ namespace META { namespace Backend {
 
         void Distributor::acceptResult(const WorkUnit &result) {
             Request &r = requests[result.key];
-            r.dataSource.appendResult(result.data);
-            if(r.dataSource.hasAllResults()) {
+            bool hasAllResults = r.dataSource.appendResult(result.data);
+            if(hasAllResults) {
                 // datasource finished // send it back
-
                 r.dataSource.markFinished();
                 Distributor::publish(r.apikey, r.routingkey, r.dataSource.getResults());
                 requests.erase(result.key);
